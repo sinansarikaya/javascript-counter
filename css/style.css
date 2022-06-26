@@ -1,0 +1,69 @@
+.container{
+    margin-top:100px;
+}
+.counter-box {
+	display: block;
+	background: #f6f6f6;
+	padding: 40px 20px 37px;
+	text-align: center
+}
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: #909090;
+	font-size: 18px;
+	font-weight: 500
+}
+.counter-box i {
+	font-size: 60px;
+	margin: 0 0 15px;
+	color: #d2d2d2
+}
+.counter { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #666;
+	line-height: 28px
+}
+
+.counter-box.colored {
+    background: #FFE74C;
+}
+/*41a882*/
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
+.submit {
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.row {
+    -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.5) !important;
+    -moz-box-shadow: 0 5px 20px rgba(0,0,0,0.5) !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5) !important;
+}
+.bg-blk {
+	background-color: #3e3c3c;
+}
+p , .fa-solid {
+	color: #fff;
+}
+button {
+	border: 0px;
+	font-size: 19px !important;
+	font-weight: 700;
+}
+button:hover {
+	background-color: #525151;
+}
