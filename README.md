@@ -1,3 +1,15 @@
 # Js-counter
 
-Bootstrap JavaScript Counter
+![GitHub last commit](https://img.shields.io/github/last-commit/sinansarikaya/JavaScript-Slider?style=flat-square)
+
+### Responsive counter made using JavaScript
+
+<hr />
+
+## Installation Options
+
+```
+$ git clone https://github.com/sinansarikaya/Js-counter.git
+```
+
+<hr />
