@@ -14,9 +14,9 @@ $ git clone https://github.com/sinansarikaya/Js-counter.git
 
 <hr />
 
-## Demo
+### Demo
 
-### [View Demo](https://sinansarikaya.github.io/Js-counter/)
+#### [View Demo](https://sinansarikaya.github.io/Js-counter/)
 
 ![JavaScript counter](./img/demo.jpeg)
 
@@ -26,4 +26,4 @@ $ git clone https://github.com/sinansarikaya/Js-counter.git
 
 You can try to make it yourself by looking at the design in Figma.
 
-### [View the design in Figma](https://www.figma.com/file/ZDmO2YgFkq63bwHo1blsLu/JavaScript-Counter?node-id=0%3A1)
+### [View the design in Figma](https://www.figma.com/file/ZDmO2YgFkq63bwHo1blsLu/JavaScript-Counter)
