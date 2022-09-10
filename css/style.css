@@ -128,3 +128,11 @@ main .button-container .btn:hover {
     padding: 0.5rem 0 !important;
   }
 }
+@media screen and (max-height: 700px) {
+  #counter {
+    height: 250px;
+  }
+  main .button-container {
+    gap: 1rem;
+  }
+}
