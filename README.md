@@ -6,10 +6,14 @@
 
 <hr />
 
-## Installation Options
+### Installation Options
 
 ```
 $ git clone https://github.com/sinansarikaya/Js-counter.git
 ```
 
 <hr />
+
+## Demo
+
+<a href="https://sinansarikaya.github.io/Js-counter/">View Demo</a>
