@@ -1,69 +1,116 @@
-.container{
-    margin-top:100px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
 }
-.counter-box {
-	display: block;
-	background: #f6f6f6;
-	padding: 40px 20px 37px;
-	text-align: center
+#container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.counter-box p {
-	margin: 5px 0 0;
-	padding: 0;
-	color: #909090;
-	font-size: 18px;
-	font-weight: 500
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: background 0.5s;
 }
-.counter-box i {
-	font-size: 60px;
-	margin: 0 0 15px;
-	color: #d2d2d2
+main.none {
+  background-color: rgba(172, 172, 164, 70%); /* None */
 }
-.counter { 
-	display: block;
-	font-size: 32px;
-	font-weight: 700;
-	color: #666;
-	line-height: 28px
+main.positive {
+  background-color: rgba(178, 164, 164, 80%); /* Positive */
 }
-
-.counter-box.colored {
-    background: #FFE74C;
+main.negative {
+  background-color: rgba(145, 126, 91, 80%); /* Negative */
 }
-/*41a882*/
-.counter-box.colored p,
-.counter-box.colored i,
-.counter-box.colored .counter {
-	color: #fff
+main .social {
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  background-color: #5c3f2c;
+  padding: 0.7rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  border: 3px solid #e9ddce;
+  border-left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
 }
-.submit {
-    background-color: #555555; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+main .social a {
+  color: #e9ddce;
+  font-size: 2rem;
+  display: inline-block;
+  transition: color 0.5s;
 }
-.row {
-    -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.5) !important;
-    -moz-box-shadow: 0 5px 20px rgba(0,0,0,0.5) !important;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5) !important;
+main .social a:hover {
+  color: #b68c64;
 }
-.bg-blk {
-	background-color: #3e3c3c;
+#counter {
+  background-color: rgba(92, 63, 44, 70%);
+  font-size: 10rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 2rem;
+  width: 50%;
+  max-width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
+  border-radius: 15px;
 }
-p , .fa-solid {
-	color: #fff;
+main .button-container {
+  width: 70%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
-button {
-	border: 0px;
-	font-size: 19px !important;
-	font-weight: 700;
+main .button-container .btn {
+  background-color: #5c3f2c;
+  color: #e9ddce;
+  outline: none;
+  border: 3px solid #e9ddce;
+  border-radius: 10px;
+  transition: background 0.5s;
+  cursor: pointer;
+  font-size: 1.7rem;
 }
-button:hover {
-	background-color: #525151;
+#reset {
+  padding: 0.7rem 5rem;
+  font-weight: 600;
+}
+#increase,
+#decrease {
+  font-weight: 700;
+  padding: 0.7rem 3rem;
+}
+main .button-container .btn:hover {
+  background-color: #b68c64;
+}
+@media screen and (max-width: 750px) {
+  main {
+    gap: 1rem;
+  }
+  #counter {
+    width: 90%;
+    margin: 2rem;
+  }
+  main .button-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  main .button-container .btn {
+    padding: 0.5rem 0 !important;
+  }
 }
