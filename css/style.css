@@ -16,9 +16,8 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  place-content: flex-end;
   align-items: center;
-  gap: 3rem;
   transition: background 0.5s;
 }
 main.none {
@@ -53,6 +52,15 @@ main .social a {
 main .social a:hover {
   color: #b68c64;
 }
+#container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  margin: auto;
+}
 #counter {
   background-color: rgba(92, 63, 44, 70%);
   font-size: 10rem;
@@ -74,6 +82,7 @@ main .button-container {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  margin-bottom: auto;
 }
 main .button-container .btn {
   background-color: #5c3f2c;
@@ -84,6 +93,7 @@ main .button-container .btn {
   transition: background 0.5s;
   cursor: pointer;
   font-size: 1.7rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
 }
 #reset {
   padding: 0.7rem 5rem;
@@ -97,8 +107,12 @@ main .button-container .btn {
 main .button-container .btn:hover {
   background-color: #b68c64;
 }
+#copyright {
+  margin-bottom: 2rem;
+  color: #5c3f2c;
+}
 @media screen and (max-width: 750px) {
-  main {
+  #container .content {
     gap: 1rem;
   }
   #counter {
